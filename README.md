@@ -51,7 +51,7 @@ Follow the following steps if you want to set this project up on your own machin
 ## .env File Format
 
 ```env
-APP_NAME = "DRF Refresher"
+APP_NAME = "Name of the Project you want to have"
 
 # Site Settings:
 SECRET_KEY = 'some_random_32_bit__hex_key'
@@ -71,18 +71,8 @@ TIME_ZONE = 'standard_time_location as city/continent'
 USE_I18N = True/False
 USE_TZ = True/False
 
-## Documentation Links:
-USERAPP_DOCS = 'link_to_docs'
-LOCATIONAPP_DOCS = 'link_to_docs'
-STORYAPP_DOCS = 'link_to_docs'
-SEARCHAPP_DOCS = 'link_to_docs'
-
 ## Personal Information
 LINKEDIN_PROFILE = " "
-
-## Google Settings:
-# distance_matrix, geolocation, geocoding, timezone APIs allowed
-GOOGLE_API_KEY = " " 
 
 ## Email Settings:
 EMAIL_HOST = ' '
