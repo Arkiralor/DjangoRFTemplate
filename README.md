@@ -7,7 +7,7 @@ Template for quick-setup of DRF projects with properly refactored code.
 Follow the following steps if you want to set this project up on your own machine.
 
 1. Clone the repository using:  `git clone <link.git>`
-2. Move into the repository directory using:    `cd DRFRefresher`
+2. Move into the repository directory using:    `cd folderName`
 3. Create a Python virtual environment: `python -m venv env`
 4. Activate the virtual environment:    `source env/scripts/activate`
 5. Update `PIP` to the specified version:   `python -m pip install --upgrade pip==22.0.4`
