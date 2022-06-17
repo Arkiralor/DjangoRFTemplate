@@ -19,7 +19,7 @@ Follow the following steps if you want to set this project up on your own machin
 
     - Create a `PostgreSQL` database in your machine as per the `Database Settings` in the `.env` file.
         - `PostgreSQL` setup instructions can be found [here](https://www.tutorialspoint.com/postgresql/postgresql_environment.htm).
-        - `PGAdmin` is a recommended tool for managing the `PostgreSQL` database and instructions for its own setup can be found [here](https://www.pgadmin.org/download/).
+        - `PGAdmin` is a recommended tool for managing a `PostgreSQL` database and instructions for its own setup can be found [here](https://www.pgadmin.org/download/).
     - Alternatively, you can use Amazon's [`RDS`](https://aws.amazon.com/rds/) service to create a managed instance of a `PostgreSQL` database.
 
         _If using Amazon's_ `RDS`_, change the following values in your_ `.env` _file to reflect the values of the_ `RDS` _database._
@@ -30,7 +30,7 @@ Follow the following steps if you want to set this project up on your own machin
         - `PGUSER`: _The username with which to log into the database._
         - `PGPASSWORD`: _The password for the username above with which to log into the database._
 
-    _Alternately, you can also use a `database_URI` in the `settings` page to connect to the database._
+    _Alternately, you can also use a [`database_URI`](https://pypi.org/project/dj-database-url/) in the `settings` page to connect to the database._
 
     __Eg:__ __`PGUSER`:`PGPASSWORD`@`PGHOST`:`PGPORT`/`PGDATABASE`__
 
@@ -57,6 +57,7 @@ APP_NAME = "Name of the Project you want to have"
 SECRET_KEY = 'some_random_32_bit__hex_key'
 DEBUG = True/False
 ENV_TYPE = 'DEV/PROD'
+ALLOWED_HOSTS = 'host_01 host_02 host_03 etc'
 
 # Database Settings:
 PGDATABASE = 'name_of_db'
@@ -70,9 +71,6 @@ LANGUAGE_CODE = 'language_code'
 TIME_ZONE = 'standard_time_location as city/continent'
 USE_I18N = True/False
 USE_TZ = True/False
-
-## Personal Information
-LINKEDIN_PROFILE = " "
 
 ## Email Settings:
 EMAIL_HOST = ' '
